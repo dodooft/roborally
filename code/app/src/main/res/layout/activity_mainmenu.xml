@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:background="@drawable/robo_rally">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RoboRally"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="65sp"
+        android:layout_margin="22dp"
+        android:shadowColor="@color/black"
+        android:shadowRadius="20"
+        android:textColor="@color/white"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:onClick="btnNewGame"
+                android:backgroundTint="@color/background"
+                android:textColor="@color/white"
+                android:text="Conectar" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Guardar Datos"
+                android:backgroundTint="@color/background"
+                android:textColor="@color/white"
+                android:onClick="btnSaveSettings"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@color/background"
+            android:columnCount="2"
+            android:padding="10dp"
+            android:rowCount="2">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NICKNAME"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/nickname"
+                android:layout_marginLeft="10dp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:gravity="bottom" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IP SERVIDOR"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/ip_server"
+                android:layout_marginLeft="10dp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+
+                android:text="192.168.0.1"/>
+            <ImageView />
+        </GridLayout>
+
+    </LinearLayout>
+</LinearLayout>

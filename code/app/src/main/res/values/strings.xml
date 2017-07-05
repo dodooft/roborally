@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ProyectoFinal</string>
+    <string name="lobby">Sala de espera</string>
+    <string name="connect">Conectar</string>
+    <string name="player_nums">Número de jugadores</string>
+    <string name="players">Jugadores</string>
+    <string name="start">Comenzar</string>
+    <string name="next_player">Ahora juega</string>
+    <string name="cards">Cartas</string>
+</resources>
